@@ -4,9 +4,9 @@ import {
   Text,
   TextInput,
   TouchableOpacity,
-  StyleSheet,
   ScrollView,
 } from 'react-native';
+import { styles } from './style'; 
 
 export default function FuelCalculator() {
   const [distance, setDistance] = useState('');
@@ -74,73 +74,3 @@ export default function FuelCalculator() {
     </ScrollView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flexGrow: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#f0f9ff', // Hafif mavi arka plan
-    padding: 20,
-  },
-  title: {
-    fontSize: 28,
-    fontWeight: 'bold',
-    color: '#0284c7', // Canlı mavi
-    marginBottom: 10,
-  },
-  subtitle: {
-    fontSize: 16,
-    color: '#64748b', // Hafif gri ton
-    textAlign: 'center',
-    marginBottom: 20,
-    lineHeight: 22,
-  },
-  input: {
-    borderWidth: 1,
-    borderColor: '#ccc',
-    padding: 15,
-    borderRadius: 8,
-    backgroundColor: '#fff',
-    width: '80%',
-    marginBottom: 20,
-  },
-  button: {
-    backgroundColor: '#38bdf8',
-    paddingVertical: 12,
-    paddingHorizontal: 20,
-    borderRadius: 8,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 3 },
-    shadowOpacity: 0.2,
-    shadowRadius: 5,
-    elevation: 5,
-    marginBottom: 20,
-  },
-  buttonText: {
-    color: 'white',
-    fontSize: 16,
-    fontWeight: 'bold',
-    textTransform: 'uppercase',
-  },
-  result: {
-    fontSize: 18,
-    color: '#333',
-    marginVertical: 20,
-    textAlign: 'center',
-  },
-  routeButton: {
-    backgroundColor: '#38bdf8',
-    paddingVertical: 10,
-    paddingHorizontal: 20,
-    borderRadius: 8,
-    marginVertical: 5,
-    width: '80%',
-    alignItems: 'center',
-  },
-  routeText: {
-    color: 'white',
-    fontSize: 16,
-    fontWeight: 'bold',
-  },
-});
