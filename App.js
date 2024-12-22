@@ -26,6 +26,7 @@ export default function App() {
             color: '#1e293b',
           },
         }}
+        
       >
         <Tab.Screen name="Ana Sayfa" component={HomeScreen} />
         <Tab.Screen name="Yakıt Hesaplama" component={FuelCalculator} />
